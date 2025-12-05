@@ -4,8 +4,8 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   lang: "zh-CN",
-  title: "Civi 的小 Wiki",
-  description: "记录开发、脚本与未检/刑执实务的个人知识库",
+  title: "Civi Tech Notes",
+  description: "记录计算机系统、大模型与工具链的技术随笔",
   base: "/",
 
   bundler: viteBundler(),
