@@ -1,7 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 
 export default hopeTheme({
-  // 部署后可以改成你的真实域名
+  // 这里可以改成你真实的域名，比如 https://wiki.xxx.com
   hostname: "https://wiki.example.com",
 
   author: {
@@ -12,7 +12,7 @@ export default hopeTheme({
   navbar: [
     { text: "首页", link: "/" },
     { text: "技术笔记", link: "/dev/" },
-    { text: "实务笔记", link: "/law/" },
+    { text: "实务随记", link: "/law/" },
     { text: "关于", link: "/about/" },
   ],
 
@@ -20,33 +20,63 @@ export default hopeTheme({
   sidebar: {
     "/dev/": [
       {
-        text: "开发环境与脚本",
+        text: "总体说明",
+        children: [
+          "/dev/",
+        ],
+      },
+      {
+        text: "VuePress & 部署",
         children: [
           "/dev/vuepress-basic.md",
+          "/dev/deploy-with-cloudflare.md",
+        ],
+      },
+      {
+        text: "环境与脚本",
+        children: [
           "/dev/docker-notes.md",
+          "/dev/linux-notes.md",
+          "/dev/qinglong-notes.md",
         ],
       },
     ],
+
     "/law/": [
+      {
+        text: "栏目说明",
+        children: [
+          "/law/",
+        ],
+      },
       {
         text: "未检 / 刑执 实务",
         children: [
           "/law/internship-notes.md",
+          "/law/case-observation.md",
+          "/law/prosecution-workflow.md",
+        ],
+      },
+      {
+        text: "数字化与风险评估",
+        children: [
+          "/law/youth-risk-digital.md",
         ],
       },
     ],
+
     "/about/": [
-      "/about/README.md",
+      "/about/",
     ],
   },
 
-  // 页脚 & 文章信息
   lastUpdated: true,
   contributors: true,
 
   footer: "© 2025 Civi · 个人练手 Wiki",
   displayFooter: true,
 
-  // 初期先不折腾插件，后面想玩搜索 / 评论再加
-  plugins: {},
+  plugins: {
+    // 后面想加搜索、阅读时长、评论，再在这里按需开启即可
+  },
 });
