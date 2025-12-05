@@ -1,30 +1,31 @@
 ---
 home: true
-title: Civi 的小 Wiki
-heroText: Civi 的个人知识库
-tagline: 用 VuePress + Cloudflare 搭建的全云端练手站
+title: Civi Tech Notes
+heroText: Civi 的技术随笔
+tagline: 主要记录计算机系统、大模型与周边工具的实践总结
 actions:
-  - text: 进入技术笔记
+  - text: 系统 & 开发
     link: /dev/
     type: primary
-  - text: 查看实务随记
+  - text: 大模型随笔
     link: /law/
     type: secondary
 features:
-  - title: 技术笔记
-    details: 记录前后端、脚本、服务器运维与自动化相关的折腾笔记。
-  - title: 实务随记
-    details: 围绕未检/刑执工作流、个案观察、数字化办案实践做总结。
-  - title: 个人项目
-    details: 包括青少年风险评估系统、小工具脚本等长期维护项目的设计与迭代。
-footer: © 2025 Civi · 记录一点一滴的学习与实践
+  - title: 系统基础
+    details: 操作系统、Linux 环境、网络基础、命令行工具等日常折腾记录。
+  - title: 大模型实战
+    details: 提示工程、推理链路、服务部署、向量检索与工具链集成的经验笔记。
+  - title: 工程视角
+    details: 从工程和运维角度看待「大模型 + 传统系统」如何协同。
+footer: © 2025 Civi · Tech Notes
 ---
 
-欢迎来到 **Civi 的小 Wiki**。  
-这是一个完全托管在 **GitHub + Cloudflare Pages** 上的静态知识库：
+欢迎来到 **Civi Tech Notes**。
 
-- 不依赖本地开发环境，所有内容都可以在 GitHub 网页端直接编辑；
-- 通过 Cloudflare 自动构建与部署，提交即发布；
-- 适合长期沉淀：技术、脚本、实务经验、论文/项目笔记等。
+这个站点主要用来记录：
 
-你可以从上方导航进入不同板块，或直接从左侧侧边栏浏览内容。
+- 日常在服务器 / Linux / Docker / 网络等方面的实践；
+- 使用大模型（包括 API、向量数据库、工具调用等）的踩坑与总结；
+- 一些和自动化脚本、监控、小工具相关的零碎想法。
+
+所有内容都通过 GitHub 编辑，Cloudflare Pages 自动构建发布。
