@@ -2,7 +2,7 @@
   "name": "civi-wiki",
   "private": true,
   "type": "module",
-  "description": "Personal wiki built with VuePress Theme Hope",
+  "description": "Personal wiki for computer systems and LLM tech notes",
   "scripts": {
     "docs:dev": "vuepress dev src",
     "docs:build": "vuepress build src"
