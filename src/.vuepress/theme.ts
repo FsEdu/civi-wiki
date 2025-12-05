@@ -1,7 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 
 export default hopeTheme({
-  // 这里可以改成你真实的域名，比如 https://wiki.xxx.com
+  // 部署后的真实域名，记得换成你自己的
   hostname: "https://wiki.example.com",
 
   author: {
@@ -11,72 +11,41 @@ export default hopeTheme({
   // 顶部导航
   navbar: [
     { text: "首页", link: "/" },
-    { text: "技术笔记", link: "/dev/" },
-    { text: "实务随记", link: "/law/" },
+    { text: "系统 & 开发", link: "/dev/" },
+    { text: "大模型随笔", link: "/law/" },
     { text: "关于", link: "/about/" },
   ],
 
-  // 侧边栏
+  // 侧边栏配置
   sidebar: {
     "/dev/": [
       {
-        text: "总体说明",
+        text: "系统 & 开发",
         children: [
           "/dev/",
-        ],
-      },
-      {
-        text: "VuePress & 部署",
-        children: [
           "/dev/vuepress-basic.md",
-          "/dev/deploy-with-cloudflare.md",
-        ],
-      },
-      {
-        text: "环境与脚本",
-        children: [
-          "/dev/docker-notes.md",
-          "/dev/linux-notes.md",
-          "/dev/qinglong-notes.md",
         ],
       },
     ],
-
     "/law/": [
       {
-        text: "栏目说明",
+        text: "大模型随笔",
         children: [
           "/law/",
-        ],
-      },
-      {
-        text: "未检 / 刑执 实务",
-        children: [
           "/law/internship-notes.md",
-          "/law/case-observation.md",
-          "/law/prosecution-workflow.md",
-        ],
-      },
-      {
-        text: "数字化与风险评估",
-        children: [
-          "/law/youth-risk-digital.md",
         ],
       },
     ],
-
-    "/about/": [
-      "/about/",
-    ],
+    "/about/": ["/about/"],
   },
 
   lastUpdated: true,
   contributors: true,
 
-  footer: "© 2025 Civi · 个人练手 Wiki",
+  footer: "© 2025 Civi · Computer & LLM Tech Notes",
   displayFooter: true,
 
   plugins: {
-    // 后面想加搜索、阅读时长、评论，再在这里按需开启即可
+    // 以后想加搜索、阅读时间、评论等插件，可以在这里按需开启
   },
 });
