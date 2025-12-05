@@ -1,33 +1,24 @@
 ---
-title: VuePress 基本命令与项目结构
+title: Linux 与服务器环境随笔
 ---
 
-# VuePress 基本命令与项目结构
+# Linux 与服务器环境随笔
 
-这一篇记录当前 Wiki 的基本项目结构和常用命令，方便以后回顾。
+这里记录一些在 Linux 服务器上经常会用到、但又容易忘的点，主要围绕：
 
-## 项目结构
+- 基本环境检查；
+- 常见排错思路；
+- 和大模型服务相关的几个小细节。
 
-```text
-civi-wiki
-├── package.json
-└── src
-    ├── .vuepress
-    │   ├── config.ts
-    │   └── theme.ts
-    ├── README.md
-    ├── about
-    │   └── README.md
-    ├── dev
-    │   ├── README.md
-    │   ├── vuepress-basic.md
-    │   ├── deploy-with-cloudflare.md
-    │   ├── docker-notes.md
-    │   ├── linux-notes.md
-    │   └── qinglong-notes.md
-    └── law
-        ├── README.md
-        ├── internship-notes.md
-        ├── case-observation.md
-        ├── prosecution-workflow.md
-        └── youth-risk-digital.md
+## 1. 登录之后我一般先看什么？
+
+```bash
+# 看系统版本和内核
+cat /etc/os-release
+uname -a
+
+# 看磁盘空间
+df -h
+
+# 看当前目录下哪些文件夹占空间
+du -sh *
