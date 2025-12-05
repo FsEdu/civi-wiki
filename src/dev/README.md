@@ -1,19 +1,17 @@
 ---
-title: 技术笔记索引
+title: 系统 & 开发
 ---
 
-# 技术笔记
+# 系统 & 开发
 
-这里主要记录与开发、部署、自动化相关的折腾过程，分为几类：
+这一部分专门用来记录与「计算机基础和开发环境」相关的内容，包括：
 
-- **VuePress & 部署**：本站本身是如何搭建、部署与维护的；
-- **Docker / Linux**：服务器环境、容器化相关的命令和经验；
-- **自动化脚本 / 青龙**：定时任务、批处理、监控等。
+- Linux / 命令行 / SSH 相关操作；
+- 服务器环境、进程、磁盘、网络排错；
+- 和大模型相关的基础设施（如 Python 环境、依赖管理等）。
 
-## 推荐阅读顺序
+目前整理的文章：
 
-1. [VuePress 基本命令](/dev/vuepress-basic.md)
-2. [GitHub + Cloudflare 全云端部署流程](/dev/deploy-with-cloudflare.md)
-3. [Docker 常用命令小抄](/dev/docker-notes.md)
-4. [Linux 常用操作与排错备忘](/dev/linux-notes.md)
-5. [青龙面板与自动化脚本随记](/dev/qinglong-notes.md)
+- [Linux 与服务器环境随笔](/dev/vuepress-basic.md)
+
+后面如果有新的主题（比如 Docker 单独一篇、网络排错单独一篇），也会继续加在这里。
